@@ -22,7 +22,7 @@ export function Item({ id, title, completed,
 const [editedDescription, setEditedDescription] = useState(description);
 
   useEffect(() => {
-    // Update the title when the editedTitle state changes
+
     setEditedTitle(title);
     let interval;
     timeUpAudio.pause();
@@ -52,7 +52,7 @@ const [editedDescription, setEditedDescription] = useState(description);
           
         }, 1000);
       } else {
-        setProgress(0); // Set progress to 0 when remainingTime is 0
+        setProgress(0);
         timeUpAudio.play();
     
       }
@@ -96,10 +96,10 @@ const [editedDescription, setEditedDescription] = useState(description);
     setIsEditing(false);
     
   if (editedTitle.trim() === "") {
-    // If the edited title is empty or just whitespace, reset it
+
     setEditedTitle(title);
   } else {
-       // Example using localStorage (not recommended for production)
+
        const updatedItems = JSON.parse(localStorage.getItem("ITEMS")).map((item) =>
        item.id === id ? { ...item, title: editedTitle } : item
      );
@@ -112,10 +112,10 @@ const [editedDescription, setEditedDescription] = useState(description);
     setIsDescriptionEditing(false);
     
   if (editedDescription.trim() === "") {
-    // If the edited title is empty or just whitespace, reset it
+
     setEditedDescription(description);
   } else {
-       // Example using localStorage (not recommended for production)
+ 
        const updatedItems = JSON.parse(localStorage.getItem("ITEMS")).map((item) =>
        item.id === id ? { ...item, description: editedDescription } : item
      );
@@ -123,8 +123,8 @@ const [editedDescription, setEditedDescription] = useState(description);
    
   }
   };
-  // Calculate the width based on the text length and set a minimum width
-  const titleContainerWidth = Math.max(editedTitle.length * 8 + 16, 100) + "px"; // Minimum width of 100px
+
+  const titleContainerWidth = Math.max(editedTitle.length * 8 + 16, 100) + "px"; 
 
   return (
     <div className="item">

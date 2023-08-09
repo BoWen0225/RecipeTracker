@@ -26,7 +26,7 @@ export function NewItemForm({ onSubmit }) {
     setNewDescription("");
     setMinutes("");
     setSeconds("");
-    setShowTimeFields(false); // Reset time field visibility
+    setShowTimeFields(false); 
   }
 
   function handleSecondsChange(e) {
@@ -82,7 +82,7 @@ export function NewItemForm({ onSubmit }) {
          <img
          src={AddTime}
          alt="Clickable Image"
-         className="btn btn-add-time" // Apply both classes
+         className="btn btn-add-time"
          id="add-time-button"
          onClick={() => setShowTimeFields(true)}
        />
@@ -100,7 +100,7 @@ export function NewItemForm({ onSubmit }) {
       <button className="btn" > <img
          src={AddItem}
          alt="Clickable Image"
-         className="btn btn-add-item" // Apply both classes
+         className="btn btn-add-item"
          id="add-item-button"
        
        /></button>

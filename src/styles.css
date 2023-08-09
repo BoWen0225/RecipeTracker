@@ -96,7 +96,7 @@
   
   .list li {
     display: flex;
-    flex-direction: column; /* Change this line */
+    flex-direction: column;
     gap: 0.5rem;
     align-items: left;
   }
@@ -212,7 +212,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
-    width: 50%; /* Each field takes half of the available width */
+    width: 50%; 
   }
   
   #logo-image {
@@ -235,8 +235,8 @@
   }
   .btn-add-time {
     border-radius: 7%;
-    width: 30%; /* Adjust the width value as needed */
-    height: auto; /* Adjust the height value as needed */
+    width: 30%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -246,8 +246,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .btn-add-item{
-    width: 10%; /* Adjust the width value as needed */
-    height: auto; /* Adjust the height value as needed */
+    width: 10%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;

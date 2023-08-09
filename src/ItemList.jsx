@@ -11,7 +11,7 @@ export function ItemList({ items, setItems, toggleItem, deleteItem,index }) {
     const [movedItem] = reorderedItems.splice(result.source.index, 1);
     reorderedItems.splice(result.destination.index, 0, movedItem);
 
-    setItems(reorderedItems); // Update the state with the new order of todos
+    setItems(reorderedItems); 
   };
 
   return (
@@ -34,9 +34,9 @@ export function ItemList({ items, setItems, toggleItem, deleteItem,index }) {
       >
         <Item
           {...item}
-          toggleItem={() => toggleItem(index, !item.completed)} // Pass index and negate completed status
-          deleteItem={() => deleteItem(index)} // Pass index
-          index={index} // Pass index
+          toggleItem={() => toggleItem(index, !item.completed)}
+          deleteItem={() => deleteItem(index)} 
+          index={index} 
         />
       </li>
     )}
