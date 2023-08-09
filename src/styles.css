@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+
+* {
+
+    font-family: 'Arimo', sans-serif;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    background: white;
+    color: #424242;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  .new-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .form-row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  
+  .btn {
+    
+    color: #424242;
+    background-color: white;
+    border:none;
+
+   
+    
+  }
+  
+
+  
+  .btn.btn-danger {
+    height:10%;
+    width:7%;
+    font-size:100%;
+   margin-left:40px;
+    background: hsl(0, 100%, 40%, 0.1);
+    border: 1px solid hsl(0, 100%, 40%);
+    color: hsl(0, 100%, 40%);
+ 
+  }
+  
+  .btn.btn-danger:hover,
+  .btn.btn-danger:focus-visible {
+    background: hsl(0, 100%, 40%, 0.2);
+  }
+  
+  .new-item-form input {
+    outline: none;
+    border: 1px solid #424242;
+    background: white;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    color: #424242;
+  }
+  
+  
+  
+  .header {
+    font-size: 1.0rem;
+    margin-top: 1.0rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .list {
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+    list-style: none;
+  }
+  
+  .list li:has(input:checked) label {
+    color: hsl(200, 20%, 40%);
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .list li {
+    display: flex;
+    flex-direction: column; /* Change this line */
+    gap: 0.5rem;
+    align-items: left;
+  }
+  
+  .list li label {
+    display: flex;
+    gap: 0.25rem;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .list li:has(input:focus-visible) label {
+    outline: 1px solid #424242;
+  }
+  
+  .list li input {
+    outline: none;
+    width: 0;
+    height: 0;
+    appearance: none;
+    pointer-events: none;
+    position: absolute;
+  }
+  
+  .list li label::before {
+    content: "";
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: lightgray;
+    border-radius: 0.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list li label:hover::before {
+    background: #F3A83C;
+  }
+  
+  .list li:has(input:checked) label::before {
+    content: "✔";
+    background: #F3A83C;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .list li:has(input:checked) label:hover::before {
+    background: #F3A83C;
+  }
+  .btn-dropdown {
+    background: #F3A83C;
+    border: none;
+    color: white;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn-dropdown:hover,
+  .btn-dropdown:focus-visible {
+    background: white;
+    border: 1px solid #F3A83C;
+    color: #F3A83C;
+
+  }
+  .btn.active {
+    background: #F3A83C;
+  }
+  .item {
+    border: 1px solid #424242;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
+  .title {
+    
+    margin-right: auto;
+    margin-left: 0;
+  }
+  
+  .description-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+
+/* Updated CSS to align the time fields */
+.time-fields {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .time-fields div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    width: 50%; /* Each field takes half of the available width */
+  }
+  
+  #logo-image {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  }
+
+ 
+  .logo-description{
+    color:#909090;
+    display: block;
+    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+  }
+  .btn-add-time {
+    border-radius: 7%;
+    width: 30%; /* Adjust the width value as needed */
+    height: auto; /* Adjust the height value as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .btn-add-time:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .btn-add-item{
+    width: 10%; /* Adjust the width value as needed */
+    height: auto; /* Adjust the height value as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .recipe-items{
+    color:#424242;
+    font-size: 10px;
+
+  }
+  .btn-clock{
+    width:20px;
+  }.btn-timer{
+    margin-top:20px;
+
+    border: 1px solid #F3A83C;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar-inner {
+    height: 100%;
+    background-color: #ff9800;
+    border-radius: 5px;
+    transition: width 0.5s;
+  }
+  .playerButtons {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+  }
+
+
+  
+  
