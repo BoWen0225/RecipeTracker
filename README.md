@@ -32,7 +32,8 @@
 <br>
 <h3 align='center'>Application Interface 🏡</h3>
 <div align='center'>
-<img width="296" alt="RecipeTrackerHome" src="https://github.com/BoWen0225/RecipeTracker/assets/115364906/885085a6-9411-4425-80cf-b2d00ecd82f8">
+<img width="192" alt="RecipeTrackerHome" src="https://github.com/BoWen0225/RecipeTracker/assets/115364906/2f22b262-0a8a-481b-bdd4-52d555c2b2d9">
+
 
 </div>
 
@@ -43,7 +44,7 @@
 <div align='center'>
 
 
-<img width="276" alt="Timer" src="https://github.com/BoWen0225/RecipeTracker/assets/115364906/4c581806-3dcd-4200-945d-871135a78cbb">
+<img width="256" alt="Timer" src="https://github.com/BoWen0225/RecipeTracker/assets/115364906/8b804099-dfd4-40af-a648-ccbc0e265f77">
 
 
 <br>
