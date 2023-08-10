@@ -7,7 +7,7 @@
 <h2>About the project</h2>
 <p>Organize complex recipes and customer orders with ease with this intuitive item tracking checklist application.  </p>
 
-👉 Live Demo: <a href='celebrated-dasik-10bc1b.netlify.app'>Mogu Recipe Tracker Demo</a>
+👉 Live Demo: <a href='https://celebrated-dasik-10bc1b.netlify.app/'>Mogu Recipe Tracker Demo</a>
 
 <h3>Built with:</h3>
 » React.js <br>
