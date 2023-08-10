@@ -30,7 +30,7 @@ export default function App() {
   const deleteItem = (id) => {
     setItems((currentItems) => {
       const updatedItems = currentItems.filter((item) => item.id !== id);
-      return updatedItemss.map((item, index) => ({ ...item, id: index }));
+      return updatedItems.map((item, index) => ({ ...item, id: index }));
     });
   };
 

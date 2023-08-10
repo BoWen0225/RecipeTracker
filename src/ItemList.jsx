@@ -23,7 +23,7 @@ export function ItemList({ items, setItems, toggleItem, deleteItem,index }) {
             ref={provided.innerRef}
             {...provided.droppableProps}
           >
-            {items.length === 0 && <div>No Todos</div>}
+            {items.length === 0 && <div>No Items</div>}
             {items.map((item, index) => (
   <Draggable key={item.id} draggableId={item.id.toString()} index={index}>
     {(provided) => (
