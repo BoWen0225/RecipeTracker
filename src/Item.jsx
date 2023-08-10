@@ -130,6 +130,7 @@ const [editedDescription, setEditedDescription] = useState(description);
     <div className="item">
       <div className="content">
         <div className="description-button-container" style={{ minWidth: titleContainerWidth }}>
+        <span className="number">{index + 1}</span>
         <label>
             <input
               type="checkbox"
@@ -137,7 +138,7 @@ const [editedDescription, setEditedDescription] = useState(description);
               onChange={toggleItem}
             />
           </label>
-          <span className="number">{index + 1}</span>
+         
           {isEditing ? (
             <input
               type="text"
