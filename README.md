@@ -31,8 +31,9 @@
 <h2>Screenshots of the Project 📸</h2>
 <br>
 <h3 align='center'>Application Interface 🏡</h3>
-<img width="296" alt="RecipeTrackerHome" src="https://github.com/BoWen0225/RecipeTracker/assets/115364906/885085a6-9411-4425-80cf-b2d00ecd82f8">
 <div align='center'>
+<img width="296" alt="RecipeTrackerHome" src="https://github.com/BoWen0225/RecipeTracker/assets/115364906/885085a6-9411-4425-80cf-b2d00ecd82f8">
+
 </div>
 
 <br>
