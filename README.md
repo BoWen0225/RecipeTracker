@@ -14,7 +14,7 @@
 » CSS <br>
 » Vite
 
-<h3>Features (PLEASE READ):</h3>
+<h3>Features 📚:</h3>
 
 » Add Title and Description <br>
 » Timed checklist items <br>
